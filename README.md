@@ -14,7 +14,7 @@ Your team is tasked with creating a proof of concept demo of a card game called 
   <li> Your boss wants to know if it is possible to implement this game using the ninja framework. You will have two weeks to implement this game. Since this is just a proof of concept, we will not be developing an extensive UI at this time. </ul>
 </ul>
 
-<h3> Tasks for this Assignment
+<h3> Tasks for this Assignment </h3>
 1. Create multiple user stories to implement the game (following INVEST format).
 2. Create tasks for each member from user stories (following SMART goals).
 
