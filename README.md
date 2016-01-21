@@ -15,8 +15,8 @@ Your team is tasked with creating a proof of concept demo of a card game called 
 </ul>
 
 <h3> Tasks for this Assignment </h3>
-1. Create multiple user stories to implement the game (following INVEST format).
-2. Create tasks for each member from user stories (following SMART goals).
+1. Create multiple user stories to implement the game (following <a href http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/> INVEST </a> format).
+2. Create tasks for each member from user stories (following <a href https://en.wikipedia.org/wiki/SMART_criteria> SMART </a> goals).
 
 
 
