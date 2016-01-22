@@ -37,8 +37,25 @@ public class DeckTest {
     @Test
     public void testDeal(){
         Deck five = new Deck(52);
-        Card delt = five.Deal();
-        System.out.println(delt.getName());
-        assertEquals(2,delt.getValue());
+        Card delt;
+        for(int i=0;i<52;i++) {
+            delt = five.Deal();
+            assertEquals((i/4)+2,delt.getValue());
+            String expectedSuit;
+            switch(i%4){
+                case 0: expectedSuit="Clubs";
+                    break;
+                case 1: expectedSuit="Diamonds";
+                    break;
+                case 2: expectedSuit="Hearts";
+                    break;
+                case 3: expectedSuit="Spades";
+                    break;
+                default:
+                    expectedSuit="NONE";
+            }
+            assertEquals(expectedSuit,delt.getSuit());
+        }
+        assertEquals("_",five.Deal().getName());//returns "blank" card if deck empty
     }
 }

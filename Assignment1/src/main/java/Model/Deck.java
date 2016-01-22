@@ -36,6 +36,8 @@ public class Deck {
     }
 
     public Card Deal() {
+        if(cards.isEmpty())
+            return new Card(0,0);
         Card delt = cards.get(0);
         cards.remove(delt);
         return delt;
