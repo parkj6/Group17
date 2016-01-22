@@ -9,9 +9,19 @@ import static org.junit.Assert.assertEquals;
 public class DeckTest {
 
     @Test
-    public void testEmptyDeck(){
+    public void testDeck(){
         Deck one = new Deck();
         assertEquals(0,one.getCards().size());
+    }
+
+    @Test
+    public void testFullDeck(){
+        Deck full_deck = new Deck(52);
+        assertEquals(52,full_deck.getCards().size());
+        assertEquals("Clubs",full_deck.getCards().get(0).getSuit());
+        assertEquals(2,full_deck.getCards().get(0).getValue());
+        assertEquals("Spades",full_deck.getCards().get(51).getSuit());
+        assertEquals(14,full_deck.getCards().get(51).getValue());
     }
 
     @Test

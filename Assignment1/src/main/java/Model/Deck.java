@@ -8,9 +8,23 @@ import java.util.ArrayList;
 public class Deck {
 
     private ArrayList<Card> cards;
+    private int num_cards;
 
     public Deck() {
         cards = new ArrayList<>();
+    }
+
+    public Deck(int num){
+        cards = new ArrayList<>();
+        int s,v;
+        for(v=2;v<15;v++){
+            for(s=0;s<4;s++){
+                cards.add(new Card(s,v));
+                num--;
+                if(num==0){ break; }
+            }
+            if(num==0){ break; }
+        }
     }
 
     public ArrayList<Card> getCards() {
