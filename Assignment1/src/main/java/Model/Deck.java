@@ -34,4 +34,10 @@ public class Deck {
     public void addCard(Card new_card) {
         cards.add(new_card);
     }
+
+    public Card Deal() {
+        Card delt = cards.get(0);
+        cards.remove(delt);
+        return delt;
+    }
 }

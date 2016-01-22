@@ -32,6 +32,13 @@ public class DeckTest {
         Card four = new Card();
         two.addCard(four);
         assertEquals(2,two.getCards().size());
+    }
 
+    @Test
+    public void testDeal(){
+        Deck five = new Deck(52);
+        Card delt = five.Deal();
+        System.out.println(delt.getName());
+        assertEquals(2,delt.getValue());
     }
 }
