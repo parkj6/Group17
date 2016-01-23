@@ -11,7 +11,10 @@ Your team is tasked with creating a proof of concept demo of a card game called 
   6. Repeat Step 2, using only the visible (top) cards on each of the four piles.
   7. When the last four cards have been dealt out and any moves made, the game is over. The fewer cards left in the tableau, the better. To win is to have only the four aces left.
   8. When the game ends, the number of discarded cards is your score. The maximum score (and thus the score necessary to win) is 48, which means all cards have been discarded except for the four aces, thus the name of the game.
-  <li> Your boss wants to know if it is possible to implement this game using the ninja framework. You will have two weeks to implement this game. Since this is just a proof of concept, we will not be developing an extensive UI at this time. </ul>
+ 
+  <li> 
+<ul> 
+    Your boss wants to know if it is possible to implement this game using the ninja framework. You will have two weeks to implement this game. Since this is just a proof of concept, we will not be developing an extensive UI at this time.
 </ul>
 
 <h3> Tasks for this Assignment </h3>
