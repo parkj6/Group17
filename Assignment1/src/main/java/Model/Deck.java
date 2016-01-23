@@ -35,19 +35,19 @@ public class Deck {
         cards.add(new_card);
     }
 
-<<<<<<< HEAD
     public void removeCard(Card remove_card) {
         cards.remove(remove_card);
     }
 
+    public Card getTopCard() {
+        return cards.get(cards.size()-1);
+    }
 
-=======
     public Card Deal() {
         if(cards.isEmpty())
             return new Card(0,0);
-        Card delt = cards.get(0);
-        cards.remove(delt);
-        return delt;
+        Card dealt = cards.get(0);
+        cards.remove(dealt);
+        return dealt;
     }
->>>>>>> refs/remotes/origin/master
 }
