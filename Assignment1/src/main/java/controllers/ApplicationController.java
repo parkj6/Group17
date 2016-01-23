@@ -16,6 +16,9 @@
 
 package controllers;
 
+import Model.Deck;
+import Model.Game;
+import ninja.Context;
 import ninja.Result;
 import ninja.Results;
 
@@ -25,12 +28,20 @@ import com.google.inject.Singleton;
 @Singleton
 public class ApplicationController {
 
+    private Game AcesUp;
+
     public Result index() {
         return Results.html();
     }
 
     public Result acesUp() {
+        AcesUp = new Game();
         return Results.html().template("views/AcesUp/AcesUp.flt.html");
+    }
+
+    public Result ButtonPressed(){
+        AcesUp.DealFour();
+        return Results.json().render(AcesUp.getColumns());
     }
 
 }
