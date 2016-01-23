@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 /**
- * Created by Cameron on 1/22/2016.
+ * Created by Cameron on 1/22/2016
  */
 public class GameTest {
 
@@ -48,6 +48,13 @@ public class GameTest {
         Aces.removeCard(2,1);
         assertNotEquals(a,Aces.getColumns()[1].getTopCard());
         assertEquals(b,Aces.getColumns()[2].getTopCard());
+	}
+    public void Move() {
+        Game Aces = new Game();
+        Aces.DealFour();
+        Card change = Aces.getColumns()[1].getTopCard();
+        Aces.move(1, 3);
+        assertEquals(change, Aces.getColumns()[3].getTopCard());
     }
 
 }

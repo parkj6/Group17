@@ -1,9 +1,10 @@
 package Model;
 
 /**
- * Created by Cameron on 1/19/2016.
+ * Created by Cameron on 1/19/2016
  * Edited by Jong Park on 01/22/2016
  */
+ 
 public class Game {
 
     private Deck[] Columns;
@@ -39,5 +40,12 @@ public class Game {
 
     public Deck[] getColumns() {
         return Columns;
+    }
+
+    public void move(int from, int to){
+        Card moved=Columns[from].getTopCard();
+        Columns[from].removeCard(moved);
+        Columns[to].addCard(moved);
+
     }
 }

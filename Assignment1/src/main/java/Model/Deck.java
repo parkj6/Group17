@@ -50,4 +50,11 @@ public class Deck {
         cards.remove(dealt);
         return dealt;
     }
+
+    public void removeCard(Card r){
+        cards.remove(r);
+
+    }
+
+    public Card getTopCard(){ return cards.get(cards.size() - 1); }
 }
