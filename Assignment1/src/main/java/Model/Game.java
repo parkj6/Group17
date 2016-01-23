@@ -10,15 +10,35 @@ public class Game {
     private Deck AcesUp;
 
     public Game(){
-
-    } /*
-    public void removeCard(Card cardClear){
-        if (Card.s == cardClear.s) {
-            if (cardClear.v>Card.v)
-                i--;
-
-            Card
+        Columns = new Deck[4];
+        for(int i=0;i<4;i++) {
+            Columns[i] = new Deck();
+        }
+        AcesUp = new Deck(52);
+    }
+    public void DealOne(int i) {
+        Columns[i].addCard((AcesUp.Deal()));
+    }
+    public void DealFour() {
+        for (int i = 0; i < 4; i++) {
+            Columns[i].addCard(AcesUp.Deal());
         }
     }
-*/
+    public void removeCard(int high, int click) {
+        if  (Columns[high].getTopCard().getSuit().equals(Columns[click].getTopCard().getSuit())) {
+            if (Columns[high].getTopCard().getValue() > Columns[click].getTopCard().getValue()) {
+                Columns[click].removeCard(Columns[click].getTopCard());
+            }
+        }
+    }
+
+    public Deck getDeck() {
+    return AcesUp;
+}
+
+    public Deck[] getColumns() {
+        return Columns;
+    }
+
+
 }

@@ -91,5 +91,31 @@
 <button id="dealButton">Deal</button>
 
 
+<script>
+
+    //$(document.body).append("<br><br><br><br><br><br>No Syntax Errors.");
+    function displayColumns(columns){
+        $('.cardLocation').html("");
+        var n=1;
+        $.each(columns, function(index, column){
+            var i=1;
+            $.each(column.cards, function( key, value ) {
+                $('#c'+n+' tr:nth-child('+i+') .cardLocation').html(value.name+" of "+value.suit);
+                i++;
+            });
+            n++;
+        });
+    }
+
+
+    $('#dealButton').click(function(){
+        $.getJSON( "/AcesUp.json", function( object ) {
+            displayColumns(object);
+        });
+    });
+
+
+</script>
+
 </body>
 </html>
