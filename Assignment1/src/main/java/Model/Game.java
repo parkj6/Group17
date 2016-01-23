@@ -3,6 +3,7 @@ package Model;
 /**
  * Created by Cameron on 1/19/2016
  */
+ 
 public class Game {
 
     private Deck[] Columns;
