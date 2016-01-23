@@ -16,11 +16,17 @@ public class Game {
         }
         AcesUp = new Deck(52);
     }
+<<<<<<< HEAD
     public void DealOne(int i) {
         Columns[i].addCard((AcesUp.Deal()));
     }
     public void DealFour() {
         for (int i = 0; i < 4; i++) {
+=======
+
+    public void DealFour(){
+        for(int i=0;i<4;i++){
+>>>>>>> master
             Columns[i].addCard(AcesUp.Deal());
         }
     }
@@ -39,6 +45,9 @@ public class Game {
     public Deck[] getColumns() {
         return Columns;
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 }
