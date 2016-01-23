@@ -11,7 +11,7 @@ public class Game {
 
     public Game(){
 
-    }
+    } /*
     public void removeCard(Card cardClear){
         if (Card.s == cardClear.s) {
             if (cardClear.v>Card.v)
@@ -20,5 +20,5 @@ public class Game {
             Card
         }
     }
-
+*/
 }
