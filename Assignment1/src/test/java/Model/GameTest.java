@@ -29,6 +29,15 @@ public class GameTest {
         }
     }
 
+    @Test
+    public void Move() {
+        Game Aces = new Game();
+        Aces.DealFour();
+        Card change = Aces.getColumns()[1].getTopCard();
+        Aces.move(1, 3);
+        assertEquals(change, Aces.getColumns()[3].getTopCard());
+    }
+
 }
 
 

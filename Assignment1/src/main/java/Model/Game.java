@@ -25,4 +25,11 @@ public class Game {
     public Deck[] getColumns(){
         return Columns;
     }
+
+    public void move(int from, int to){
+        Card moved=Columns[from].getTopCard();
+        Columns[from].removeCard(moved);
+        Columns[to].addCard(moved);
+
+    }
 }
