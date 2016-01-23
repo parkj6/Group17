@@ -2,6 +2,7 @@ package Model;
 
 /**
  * Created by Cameron on 1/19/2016.
+ * Edited by Jong Park on 01/22/2016
  */
 public class Game {
 
@@ -14,6 +15,18 @@ public class Game {
         AcesUp = new Deck(52);
     }
 
+<<<<<<< HEAD
+    } /*
+    public void removeCard(Card cardClear){
+        if (Card.s == cardClear.s) {
+            if (cardClear.v>Card.v)
+                i--;
+
+            Card
+        }
+    }
+*/
+=======
     public void DealFour(){
         for(int i=0;i<4;i++){
             Columns[i].addCard(AcesUp.Deal());
@@ -25,4 +38,5 @@ public class Game {
     public Deck[] getColumns(){
         return Columns;
     }
+>>>>>>> refs/remotes/origin/master
 }
