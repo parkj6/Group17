@@ -39,6 +39,9 @@ public class Deck {
         cards.remove(remove_card);
     }
 
+    public Card getTopCard() {
+        return cards.get(cards.size()-1);
+    }
 
     public Card Deal() {
         if(cards.isEmpty())
